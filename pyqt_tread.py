@@ -1,14 +1,4 @@
 # !/usr/bin/env
-
-# -*- coding: utf-8 -*-
-
-# Form implementation generated from reading ui file 'qtGUI.ui'
-
-# Created by: PyQt4 UI code generator 4.11.4
-
-# WARNING! All changes made in this file will be lost!
-
-
 from PyQt4 import QtCore, QtGui
 import sys
 
@@ -51,9 +41,6 @@ class worker(QtCore.QThread):
     def terminated():
         self.terminated = False
 
-
-
-
 class Ui_MainWindow(object):
 
     worker = worker()
@@ -62,10 +49,6 @@ class Ui_MainWindow(object):
 
     # self.obj = worker.Worker()  # no parent!
     # self.thread = QThread()  # no parent!
-
-
-
-
 
     def setupUi(self, MainWindow):
         MainWindow.setObjectName(_fromUtf8("MainWindow"))
@@ -160,14 +143,9 @@ class Ui_MainWindow(object):
         self.statusbar.setObjectName(_fromUtf8("statusbar"))
         MainWindow.setStatusBar(self.statusbar)
         
-
-
         # self.Send.clicked.connect(self.obj)
         # self.obj.moveToThread(self.thread)
         # self.thread.start()
-
-
-
 
         self.retranslateUi(MainWindow)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
@@ -192,10 +170,9 @@ class Ui_MainWindow(object):
         self.label_15.setText(_translate("MainWindow", "TextLabel", None))
         self.label_16.setText(_translate("MainWindow", "TextLabel", None))
         self.Send.setText(_translate("MainWindow", "Send", None))
-
-    #     self.Exit.clicked.connect(self.Exitmod)
-    # def Exitmod(self):
         
+    #     self.Exit.clicked.connect(self.Exitmod)
+    # def Exitmod(self):      
 
     # def show_message(self):
     
@@ -203,10 +180,6 @@ class Ui_MainWindow(object):
     #     while 1 :
     #         QtGui.QApplication.processEvents()    
     #         print "aa"   
-        
-                
-        
-
     
 # def main():
    # myform=Ui_MainWindow()
